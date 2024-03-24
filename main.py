@@ -89,7 +89,6 @@ def club():
     print(filtred_list)
 
 def script(): 
-
     select_filter = input('Introduce el filtro: ')
     if select_filter == 'name': 
         name()
