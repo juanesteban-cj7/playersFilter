@@ -88,15 +88,19 @@ def club():
     filtred_list = list(filter(lambda x: x['club'] == what_club, players))
     print(filtred_list)
 
+def script(): 
 
-select_filter = input('Introduce el filtro: ')
-if select_filter == 'name': 
-    name()
-if select_filter == 'nationality': 
-    nationality()
-if select_filter == 'years': 
-    years()
-if select_filter == 'countryClub': 
-    countryClub()
-if select_filter == 'club': 
-    club()
+    select_filter = input('Introduce el filtro: ')
+    if select_filter == 'name': 
+        name()
+    if select_filter == 'nationality': 
+        nationality()
+    if select_filter == 'years': 
+        years()
+    if select_filter == 'countryClub': 
+        countryClub()
+    if select_filter == 'club': 
+        club()
+
+if __name__ == '__main__':
+    script()
